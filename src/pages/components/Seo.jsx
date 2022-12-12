@@ -27,6 +27,7 @@ const SEO = ({ title, description, image, article }) => {
       <body id="pagetop" />
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
+      <meta name="keywords" content="広島,東広島,不用品回収,リサイクル家電買取,廃品回収,お片付け,遺品整理" />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}

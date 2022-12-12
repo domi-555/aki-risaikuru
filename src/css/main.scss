@@ -103,6 +103,15 @@ header {
             display: flex;
         }
         #header-inner {
+            h1 { 
+                font-size: 12px; font-weight: 500; margin-bottom: 5px; position: absolute; top: 15px;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+                @media screen and (max-width: 1366px) {
+                    width: 42%;
+                }
+            }
             @media screen and (min-width: 1367px) {
             width: 60%;
             }
@@ -148,12 +157,7 @@ header {
                     box-sizing: border-box;
                     position: relative;
                     z-index: 100;
-                    p { 
-                        font-size: 12px; font-weight: 500; margin-bottom: 5px;
-                        @media screen and (max-width: 1024px) {
-                            display: none;
-                        }
-                    }
+                    
                     @media screen and (min-width:1281px){
                         width: 30%;
                         display: flex;
@@ -244,6 +248,7 @@ header {
                     width: 100%;
                     font-weight: 700;
                     text-align: right;
+                    padding: 10px 0;
                     span { display: inline-block; padding: 2px 8px; background-color: #0295da; border-radius: 10px; color: #fff; margin-left: 10px;}
                 }
             }

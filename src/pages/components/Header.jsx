@@ -1,5 +1,4 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -10,11 +9,10 @@ const Header = () => {
       <header>
         <div id="header">
           <div id="header-inner">
-            
             <div className='h_cont'>
-              <div className="h_logo">
-                <p>広島の不用品回収・粗大ゴミ回収・ゴミ回収</p>
-                <h1><a href="/"><img src="../../images/logo.png" width={265} height={48} alt="安芸リサイクル" /></a></h1>
+              <h1>広島、東広島、安芸区、安芸郡の不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理・ゴミ屋敷・空家整理</h1>
+              <div className="h_logo">                
+                <a href="/"><img src="../../images/logo.png" width={265} height={48} alt="安芸リサイクル" /></a>
               </div>
               <div className='h_tool'>
               <div className='h_tel'>

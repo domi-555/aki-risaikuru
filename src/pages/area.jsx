@@ -9,7 +9,10 @@ const area = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-    <Seo title="対応エリア" />
+    <Seo
+    title="対応エリア"
+    description="広島不用品回収対応エリア(広島市中区・東区・南区・安佐南区・安佐北区・西区・佐伯区・廿日市市・安芸区・海田・坂・熊野・東広島市・西条・八本松・黒瀬町・安芸津町・安浦町・呉市・江田島市・音戸町・倉橋町)"
+    />
         
     <Layout>
     <div id="breadcrumb">

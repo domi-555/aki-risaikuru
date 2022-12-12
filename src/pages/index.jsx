@@ -1,6 +1,4 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
-import { Link, graphql } from "gatsby"
 
 import Seo from './components/Seo'
 import Header from './components/Header'
@@ -14,7 +12,7 @@ import Footer from './components/Footer'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleRight,faChevronUp,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Home = ({ data }) => {
   return (

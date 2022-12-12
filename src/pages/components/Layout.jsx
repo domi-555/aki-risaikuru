@@ -2,7 +2,6 @@ import React from 'react'
 
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql,Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import Header from './Header'
@@ -11,10 +10,9 @@ import MainR from './MainR'
 import ServiceList from './Service_list'
 import TelList from './Tel_List'
 import Footer from './Footer'
-import Seo from './Seo'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleRight,faChevronUp,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"

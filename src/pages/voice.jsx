@@ -9,9 +9,12 @@ const voice = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-    <Seo title="お客様の声" />
+      <Seo
+      title="お客様の声"
+      description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルのお客様について"
+      />
       <Layout>
-      <div id="breadcrumb">
+        <div id="breadcrumb">
             <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <FontAwesomeIcon icon={faHouse} />

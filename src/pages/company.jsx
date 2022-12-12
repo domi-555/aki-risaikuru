@@ -9,7 +9,10 @@ const company = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-    <Seo title="会社概要" />
+    <Seo
+    title="会社概要"
+    description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルの会社概要"
+    />
     <Layout>
     <div id="breadcrumb">
             <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">

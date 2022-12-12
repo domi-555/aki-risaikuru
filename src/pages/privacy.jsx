@@ -9,8 +9,11 @@ const privacy = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-    <Seo title="個人情報の取り扱いについて" />
-        <Layout>
+      <Seo
+      title="個人情報の取り扱いについて"
+      description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルの個人情報の取り扱いについて"
+      />
+      <Layout>
         <div id="breadcrumb">
             <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">

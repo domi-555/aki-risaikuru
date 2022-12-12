@@ -9,7 +9,10 @@ const recycle = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-        <Seo title="買取・引取" />
+        <Seo
+        title="買取・引取"
+        description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルの買取品目・取引について"
+        />
       <Layout>
 
       <div id="breadcrumb">

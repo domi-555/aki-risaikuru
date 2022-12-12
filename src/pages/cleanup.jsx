@@ -9,27 +9,30 @@ const cleanup = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-      <Seo title="家財・片付け専門" />
-    <Layout>
-    <div id="breadcrumb">
-            <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <FontAwesomeIcon icon={faHouse} />
-                    <Link to="/" itemprop="item">
-                        <span itemprop="name">ホーム</span>
-                    </Link>
-                    <meta itemprop="position" content="1" />
-                </li>
-                <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <FontAwesomeIcon icon={faAngleRight} />
-                    <Link to={url} itemprop="item">
-                        <span itemprop="name">
-                        家財・片付け専門
-                        </span>
-                    </Link>
-                    <meta itemprop="position" content="2" />
-                </li>
-            </ul>
+      <Seo
+      title="家財・片付け専門"
+      description="家財・片付け専門　広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理の安芸リサイクル"
+      />
+      <Layout>
+        <div id="breadcrumb">
+          <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+              <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <FontAwesomeIcon icon={faHouse} />
+                  <Link to="/" itemprop="item">
+                      <span itemprop="name">ホーム</span>
+                  </Link>
+                  <meta itemprop="position" content="1" />
+              </li>
+              <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <FontAwesomeIcon icon={faAngleRight} />
+                  <Link to={url} itemprop="item">
+                      <span itemprop="name">
+                      家財・片付け専門
+                      </span>
+                  </Link>
+                  <meta itemprop="position" content="2" />
+              </li>
+          </ul>
         </div>
 
         <h3 className="main_title">家財・片付け専門</h3>
@@ -107,7 +110,7 @@ const cleanup = () => {
             <li><FontAwesomeIcon icon={faCheck} />長距離出張での少量で買取りは、かなり高価なものでない限り難しいです。</li>
         </ul>
 
-        </Layout>
+      </Layout>
     </>
   )
 }

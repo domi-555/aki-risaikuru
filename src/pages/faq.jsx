@@ -9,10 +9,13 @@ const faq = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-        <Seo title="よくあるご質問" />
-        <Layout>
+      <Seo
+      title="よくあるご質問"
+      description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルのよくあるご質問"
+      />
+      <Layout>
 
-      <div id="breadcrumb">
+        <div id="breadcrumb">
             <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                     <FontAwesomeIcon icon={faHouse} />
@@ -33,7 +36,7 @@ const faq = () => {
             </ul>
         </div>
 
-      <h3 className="main_title">よくあるご質問</h3>
+        <h3 className="main_title">よくあるご質問</h3>
         <p className="faq_bg_q">引越しするので出張買取をお願いしたいのですが、どのような流れになりますか？</p>
         <div className="faq_bg_a">
           <p>まずは、フリーダイヤル（0120-28-3374）または、<a href="/contact/">お問い合わせフォーム</a>よりご連絡ください。引越し日、買取商品の種類・数・大きさ・場所などをご連絡ください。<br />

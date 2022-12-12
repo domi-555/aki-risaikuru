@@ -4,13 +4,16 @@ import Layout from '../components/Layout'
 import PlanList from '../components/Plan_list'
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHouse,faAngleRight,faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faHouse,faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 const house_cleaning = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
     return (
       <>
-        <Seo title="引越しに伴う粗大ゴミ回収" />
+        <Seo
+        title="ハウスクリーニング"
+        description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルのサービス内容｜ハウスクリーニング"
+        />
           <Layout>
           <div id="breadcrumb">
               <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -34,7 +37,7 @@ const house_cleaning = () => {
                   <FontAwesomeIcon icon={faAngleRight} />
                       <Link to={url} itemprop="item">
                           <span itemprop="name">
-                          引越しに伴う粗大ゴミ回収
+                          ハウスクリーニング
                           </span>
                       </Link>
                       <meta itemprop="position" content="2" />

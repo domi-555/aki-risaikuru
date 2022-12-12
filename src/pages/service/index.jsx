@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import PlanList from '../components/Plan_list'
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHouse,faAngleRight,faCheck,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faHouse,faAngleRight,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const service = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';

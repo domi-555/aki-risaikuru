@@ -4,11 +4,15 @@ import Layout from './components/Layout'
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHouse,faAngleRight } from '@fortawesome/free-solid-svg-icons'
+
 const sitemap = () => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
   return (
     <>
-    <Seo title="サイトマップ" />
+    <Seo
+    title="サイトマップ"
+    description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルのサイトマップ"
+    />
       <Layout>
       <div id="breadcrumb">
             <ul class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
