@@ -58,7 +58,7 @@ p { margin: 20px 0;}
 
 .center {
     text-align: center;
-    img { margin:0 auto;}
+    img { margin:0 auto; }
 }
 
 .pc{
@@ -324,6 +324,9 @@ body {
   }
   header input[type=checkbox] { display: none; }
 
+
+
+
   @media screen and (max-width:768px){
     #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after { background: #fff; }
     
@@ -529,7 +532,7 @@ footer {
     }
 }
 .pack_title {
-    font-family: "Noto Sans JP", sans-serif; font-weight: 900; font-size: 250%; text-align: center;
+    font-family: "Noto Sans JP", sans-serif; font-weight: 900; font-size: 250%; text-align: center; margin: 20px 0;
     @media screen and (max-width:768px){
         font-size: 140%;
     }
@@ -577,8 +580,14 @@ footer {
             border-radius: 10px;
             color: #fff;
             font-weight: 900;
+            min-height: 540px;
         }
     }
+}
+
+.bn_list { 
+    margin: 20px 0; text-align: center;
+    img { margin: 0 auto;}
 }
 
 .kaisyu_box { 
@@ -588,7 +597,11 @@ footer {
 
 .promise_box { 
     display: flex; flex-wrap: wrap; justify-content: center;
-        div { width : calc(100% / 3); }
+        .promise_img {
+            width : calc(100% / 3);
+            text-align: center;
+            img { width: 100%; height: auto;}
+        }
 }
 
 .service {
@@ -687,6 +700,12 @@ footer {
     .icon_img { position: absolute; right: 10px;}
 }
 
+.service_list_box {
+    background-color: #f7f6f0; border-radius: 5px; padding: 5px 25px;
+}
+
+.service_list_title { font-size: 140%; font-weight: 900; color: #cc0000; border-bottom: dashed 2px #ccc; margin: 25px 0;  padding-bottom: 10px; }
+
 .img_100p img { width: 100%; height: auto;}
 
 .recycle_txt {
@@ -764,6 +783,15 @@ footer {
             &:hover {
                 color: #000;
             }
+        }
+    }
+    .side_bn {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        a { width: 100%;}
+        img {
+            margin: 0 auto;
         }
     }
     .bt01 {
@@ -1007,7 +1035,7 @@ footer {
     text-align: center;    
     text-decoration:none;
     padding:15px 70px 15px 120px;
-    margin: 35px 0;
+    margin: 50px 0;
     position: relative;
     z-index: 0;
     box-shadow: 0 5px 0 #014e89, 0px 0px 2px 1px rgba(0,0,0,0.1) inset;
@@ -1095,7 +1123,7 @@ footer {
 }
 
 .faq_bg_q {
-    background-image: url("../images/faq/faq_q.png");
+    background-image: url("../images/faq_q.png");
     border-bottom: solid 5px #5ec618;
     background-repeat: no-repeat;
     font-size: 120%;
@@ -1106,7 +1134,7 @@ footer {
 }
 
 .faq_bg_a {
-    background-image: url("../images/faq/faq_a.png");
+    background-image: url("../images/faq_a.png");
     background-repeat: no-repeat;
     padding-left: 50px;
     padding-top: 0px;
@@ -1143,3 +1171,7 @@ footer {
 }
 
 .pt47 { padding-top: 47px;}
+.gmap {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
