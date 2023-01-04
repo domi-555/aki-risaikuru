@@ -7,16 +7,16 @@ import { faChevronUp,faCircleChevronRight } from '@fortawesome/free-solid-svg-ic
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-import Seo from './components/Seo'
-import Header from './components/Header'
-import Mainimage from './components/Mainimage'
-import PlanList from './components/Plan_list'
-import ServiceList from './components/Service_list'
-import BnList from './components/banner_list'
-import TelList from './components/Tel_List'
-import MainR from './components/MainR'
-import Footer from './components/Footer'
-import TopVoice from './components/top_voice'
+import Seo from '../components/Seo';
+import Header from '../components/Header'
+import Mainimage from '../components/Mainimage'
+import PlanList from '../components/Plan_list'
+import ServiceList from '../components/Service_list'
+import BnList from '../components/banner_list'
+import TelList from '../components/Tel_List'
+import MainR from '../components/MainR'
+import Footer from '../components/Footer'
+import TopVoice from '../components/top_voice'
 
 export default function Home() {
   return (
@@ -169,37 +169,6 @@ const jsonLd = {
   "@context":"https://schema.org",
   "@graph":[
     {
-      "@type":"WebSite",
-      "@id":"https://aki-risaikuru.com/#website",
-      "url":"https://aki-risaikuru.com/",
-      "name":"安芸リサイクル",
-      "inLanguage":"ja",
-      "publisher":{
-        "@id":"https://aki-risaikuru.com/#organization"
-      }      
-    },
-    {
-      "@type":"Organization",
-      "@id":"https://aki-risaikuru.com/#organization",
-      "name":"安芸リサイクル",
-      "url":"https://aki-risaikuru.com/",
-      "logo":{
-        "@type":"ImageObject",
-        "@id":"https://aki-risaikuru.com/#organizationLogo",
-        "url":"https://aki-risaikuru.com/images/logo.png",
-        "width":265,
-        "height":48
-      },
-      "image":{
-        "@id":"https://aki-risaikuru.com/#organizationLogo"
-      },
-      "contactPoint":{
-        "@type":"ContactPoint",
-        "telephone":"+81120-28-3374",
-        "contactType":"Reservations"
-      }
-    },
-    {
       "@type":"BreadcrumbList",
       "@id":"https://aki-risaikuru.com/#breadcrumblist",
       "itemListElement":[
@@ -210,30 +179,48 @@ const jsonLd = {
           "item":{
             "@type":"WebPage",
             "@id":"https://aki-risaikuru.com/",
-            "name":"安芸リサイクル",
+            "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル",
             "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応",
             "url":"https://aki-risaikuru.com/"
-          }
+          },
+          "nextItem":"https://aki-risaikuru.com/#listItem"
         }
       ]
+    },
+    {
+      "@type":"Person",
+      "@id":"https://aki-risaikuru.com/#person"
     },
     {
       "@type":"WebPage",
       "@id":"https://aki-risaikuru.com/#webpage",
       "url":"https://aki-risaikuru.com/",
-      "name":"安芸リサイクル",
+      "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル",
+      "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応",
       "inLanguage":"ja",
       "isPartOf":{
-        "@id":"https://aki-risaikuru.com/#webpage"
+        "@id":"https://aki-risaikuru.com/#website"
       },
       "breadcrumb":{
         "@id":"https://aki-risaikuru.com/#breadcrumblist"
       },
       "datePublished":"2022-12-26T01:06:53+09:00",
-      "dateModified":"2022-12-20T04:27:08+09:00"
+      "dateModified":"2022-12-27T04:27:08+09:00"
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://aki-risaikuru.com/#website",
+      "url":"https://aki-risaikuru.com/",
+      "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル",
+      "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応",
+      "inLanguage":"ja",
+      "publisher":{
+        "@id":"https://aki-risaikuru.com/#person"
+      }
     }
   ]
 }
+
 
 export const Head = () => (
   <>

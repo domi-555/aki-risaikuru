@@ -1,8 +1,8 @@
 import React from 'react'
-import Seo from '../components/Seo'
-import BreadCrumb from '../components/BreadCrumb'
-import Layout from '../components/Layout'
-import PlanList from '../components/Plan_list'
+import Seo from '../../components/Seo'
+import BreadCrumb from '../../components/BreadCrumb'
+import Layout from '../../components/Layout'
+import PlanList from '../../components/Plan_list'
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -52,12 +52,12 @@ export default function service() {
             </div>
 
             <div className="service_flow">
-                <div className="service_h">遺品整理・仏壇の引取り<img src="../../images/service/service_icon03.png" className="icon_img" alt="" /></div>
+                <div className="service_h">サービス一覧<img src="../../images/service/service_icon03.png" className="icon_img" alt="" /></div>
                 <div className="service_flow_inner">
                     <div className="service_flow_img"><img src="../../images/service/service003_2.jpg" width={180} className="b_radi5" alt="" /></div>
                     <div className="service_flow_txt"><p>人様の大切な遺品を定年に整理させて頂きます。<br />
                     不用品の処分、清掃もお任せください！</p>
-                    <p><Link to="/service/ihin_seiri/" className="bt01">詳しくはこちら<FontAwesomeIcon icon={faCircleChevronRight} /></Link></p></div>
+                    <p><Link to="/service/" className="bt01">詳しくはこちら<FontAwesomeIcon icon={faCircleChevronRight} /></Link></p></div>
                 </div>
             </div>
 
@@ -87,3 +87,79 @@ export default function service() {
     </>
   )
 }
+
+const jsonLd = {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://aki-risaikuru.com/service/#breadcrumblist",
+        "itemListElement":[
+          {
+            "@type":"ListItem",
+            "@id":"https://aki-risaikuru.com/#listItem",
+            "position":1,
+            "item":{
+              "@type":"WebPage",
+              "@id":"https://aki-risaikuru.com/",
+              "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル",
+              "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応",
+              "url":"https://aki-risaikuru.com/"
+            },
+            "nextItem":"https://aki-risaikuru.com/#listItem"
+          },
+          {
+            "@type":"ListItem",
+            "@id":"https://aki-risaikuru.com/service/#listItem",
+            "position":2,
+            "item":{
+              "@type":"WebPage",
+              "@id":"https://aki-risaikuru.com/service/",
+              "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜サービス一覧",
+              "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜サービス一覧",
+              "url":"https://aki-risaikuru.com/service/"
+            },
+            "previousItem":"https://aki-risaikuru.com/#listItem"
+          }
+        ]
+      },
+      {
+        "@type":"Person",
+        "@id":"https://aki-risaikuru.com/service/#person"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://aki-risaikuru.com/service/#webpage",
+        "url":"https://aki-risaikuru.com/service/",
+        "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜サービス一覧",
+        "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜サービス一覧",
+        "inLanguage":"ja",
+        "isPartOf":{
+          "@id":"https://aki-risaikuru.com/service/#website"
+        },
+        "breadcrumb":{
+          "@id":"https://aki-risaikuru.com/service/#breadcrumblist"
+        },
+        "datePublished":"2022-12-26T01:06:53+09:00",
+        "dateModified":"2022-12-27T04:27:08+09:00"
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://aki-risaikuru.com/service/#website",
+        "url":"https://aki-risaikuru.com/service/",
+        "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜サービス一覧",
+        "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜サービス一覧",
+        "inLanguage":"ja",
+        "publisher":{
+          "@id":"https://aki-risaikuru.com/service/#person"
+        }
+      }
+    ]
+  }
+  
+  
+  export const Head = () => (
+    <>
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>    
+    </>
+  )

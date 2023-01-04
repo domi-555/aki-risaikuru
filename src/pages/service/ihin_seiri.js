@@ -1,8 +1,8 @@
 import React from 'react'
-import Seo from '../components/Seo'
-import BreadCrumbParent from '../components/BreadCrumbParent'
-import Layout from '../components/Layout'
-import PlanList from '../components/Plan_list'
+import Seo from '../../components/Seo'
+import BreadCrumbParent from '../../components/BreadCrumbParent'
+import Layout from '../../components/Layout'
+import PlanList from '../../components/Plan_list'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
@@ -47,7 +47,7 @@ export default function ihinSeiri() {
             <li><FontAwesomeIcon icon={faCheck} />遺品をリサイクルしてほしい。</li>
             <li><FontAwesomeIcon icon={faCheck} />遺品を供養してほしい。</li>
             <li><FontAwesomeIcon icon={faCheck} />遺品をゴミとして扱わないでほしい。</li>
-            <li><FontAwesomeIcon icon={faCheck} />回収後、ハウスクリーニングしてほしい。</li>
+            <li><FontAwesomeIcon icon={faCheck} />回収後、遺品整理・仏壇の引取りしてほしい。</li>
             <li><FontAwesomeIcon icon={faCheck} />時間をかけて一緒に整理してほしい。</li>
         </ul>
           
@@ -84,3 +84,92 @@ export default function ihinSeiri() {
     </>
   )
 }
+
+const jsonLd = {
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://aki-risaikuru.com/service/ihin_seiri/#breadcrumblist",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "@id":"https://aki-risaikuru.com/#listItem",
+          "position":1,
+          "item":{
+            "@type":"WebPage",
+            "@id":"https://aki-risaikuru.com/",
+            "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル",
+            "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応",
+            "url":"https://aki-risaikuru.com/"
+          },
+          "nextItem":"https://aki-risaikuru.com/#listItem"
+        },
+        {
+          "@type":"ListItem",
+          "@id":"https://aki-risaikuru.com/service/#listItem",
+          "position":2,
+          "item":{
+            "@type":"WebPage",
+            "@id":"https://aki-risaikuru.com/service/",
+            "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜サービス一覧",
+            "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜遺品整理・仏壇の引取り",
+            "url":"https://aki-risaikuru.com/service/"
+          },
+          "nextItem":"https://aki-risaikuru.com/service/ihin_seiri/#listItem"
+        },
+        {
+          "@type":"ListItem",
+          "@id":"https://aki-risaikuru.com/service/ihin_seiri/#listItem",
+          "position":3,
+          "item":{
+            "@type":"WebPage",
+            "@id":"https://aki-risaikuru.com/service/ihin_seiri/",
+            "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜サービス一覧｜遺品整理・仏壇の引取り",
+            "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜遺品整理・仏壇の引取り",
+            "url":"https://aki-risaikuru.com/service/ihin_seiri/"
+          },
+          "previousItem":"https://aki-risaikuru.com/service/#listItem"
+        }
+      ]
+    },
+    {
+      "@type":"Person",
+      "@id":"https://aki-risaikuru.com/service/ihin_seiri/#person"
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://aki-risaikuru.com/service/ihin_seiri/#webpage",
+      "url":"https://aki-risaikuru.com/service/ihin_seiri/",
+      "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜遺品整理・仏壇の引取り",
+      "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜遺品整理・仏壇の引取り",
+      "inLanguage":"ja",
+      "isPartOf":{
+        "@id":"https://aki-risaikuru.com/service/ihin_seiri/#website"
+      },
+      "breadcrumb":{
+        "@id":"https://aki-risaikuru.com/service/ihin_seiri/#breadcrumblist"
+      },
+      "datePublished":"2022-12-26T01:06:53+09:00",
+      "dateModified":"2022-12-27T04:27:08+09:00"
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://aki-risaikuru.com/service/ihin_seiri/#website",
+      "url":"https://aki-risaikuru.com/service/ihin_seiri/",
+      "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜遺品整理・仏壇の引取り",
+      "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜遺品整理・仏壇の引取り",
+      "inLanguage":"ja",
+      "publisher":{
+        "@id":"https://aki-risaikuru.com/service/ihin_seiri/#person"
+      }
+    }
+  ]
+}
+
+
+export const Head = () => (
+  <>
+    <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>    
+  </>
+)

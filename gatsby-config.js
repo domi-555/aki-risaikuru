@@ -67,8 +67,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,

@@ -4,7 +4,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import Header from './Header'
+
+import Header from './Header';
 
 import MainR from './MainR'
 import ServiceList from './Service_list'

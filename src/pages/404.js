@@ -1,7 +1,7 @@
 import React from 'react'
-import Seo from './components/Seo'
-import BreadCrumb from './components/BreadCrumb'
-import Layout from './components/Layout'
+import Seo from '../components/Seo'
+import BreadCrumb from '../components/BreadCrumb'
+import Layout from '../components/Layout'
 import { Link } from "gatsby"
 
 const pagemeta = {
@@ -32,3 +32,79 @@ export default function notFound() {
     </>
   )
 }
+
+const jsonLd = {
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://aki-risaikuru.com/404/#breadcrumblist",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "@id":"https://aki-risaikuru.com/#listItem",
+          "position":1,
+          "item":{
+            "@type":"WebPage",
+            "@id":"https://aki-risaikuru.com/",
+            "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル",
+            "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応",
+            "url":"https://aki-risaikuru.com/"
+          },
+          "nextItem":"https://aki-risaikuru.com/#listItem"
+        },
+        {
+          "@type":"ListItem",
+          "@id":"https://aki-risaikuru.com/404/#listItem",
+          "position":2,
+          "item":{
+            "@type":"WebPage",
+            "@id":"https://aki-risaikuru.com/404/",
+            "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜404 Not Found",
+            "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜お探しのページは見つかりませんでした",
+            "url":"https://aki-risaikuru.com/404/"
+          },
+          "previousItem":"https://aki-risaikuru.com/#listItem"
+        }
+      ]
+    },
+    {
+      "@type":"Person",
+      "@id":"https://aki-risaikuru.com/404/#person"
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://aki-risaikuru.com/404/#webpage",
+      "url":"https://aki-risaikuru.com/404/",
+      "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜404 Not Found",
+      "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜お探しのページは見つかりませんでした",
+      "inLanguage":"ja",
+      "isPartOf":{
+        "@id":"https://aki-risaikuru.com/404/#website"
+      },
+      "breadcrumb":{
+        "@id":"https://aki-risaikuru.com/404/#breadcrumblist"
+      },
+      "datePublished":"2022-12-26T01:06:53+09:00",
+      "dateModified":"2022-12-27T04:27:08+09:00"
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://aki-risaikuru.com/404/#website",
+      "url":"https://aki-risaikuru.com/404/",
+      "name":"広島不用品回収・東広島不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理｜安芸リサイクル｜404 Not Found",
+      "description":"広島の不用品回収・引越しゴミ・お片付け・粗大ゴミ・お家丸ごと・遺品整理・秘密厳守・明朗会計・安心の定額パック・追加料金なし・買取から処分まで・年中無休・損害保険対応・クレジットカード対応・見積無料・遠方地域対応の安芸リサイクル｜お探しのページは見つかりませんでした",
+      "inLanguage":"ja",
+      "publisher":{
+        "@id":"https://aki-risaikuru.com/404/#person"
+      }
+    }
+  ]
+}
+
+
+export const Head = () => (
+  <>
+    <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>    
+  </>
+)
