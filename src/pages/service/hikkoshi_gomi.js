@@ -22,7 +22,7 @@ export default function hikkoshiGomi() {
       title={pagemeta.subTitle}
       description="広島・東広島の不用品回収・買取・引越しゴミ・家財整理・ゴミ屋敷・遺品整理 安芸リサイクルのサービス内容｜引越しに伴う粗大ゴミ回収"
       />
-        <Layout>
+      <Layout>
         <BreadCrumbParent
         title={pagemeta.subTitle}
         slug={pagemeta.slug}
@@ -32,9 +32,9 @@ export default function hikkoshiGomi() {
 
         <h3 className="main_title">サービス一覧</h3>
 
-        <h4 className="service_title">引越しに伴う粗大ゴミ回収<img  src="../../images/service/service_icon04.png" className="icon_img" alt="" /></h4>
+        <h4 className="service_title">引越しに伴う粗大ゴミ回収<StaticImage  src="../../images/service/service_icon04.png" className="icon_img" alt="" /></h4>
 
-        <div><img  src="../../images/service/hikkoshi01.jpg" width={765} height={381} alt="" /></div>
+        <div><StaticImage  src="../../images/service/hikkoshi01.jpg" width={765} height={381} alt="" /></div>
         <p>引越しの際に出る粗大ゴミや、不用品の処分を自分でやるのはとても労力がかかります。<br />
         弊社では、お得なパック料金を選ぶ事により、様々な粗大ゴミの処分や不用品の回収にも丁寧に対応いたします。<br />
         引越しのスケジュールに合わせて作業日を調整いたしますので、ご連絡の際は引越し日の日程にゆとりをもってご連絡下さい。</p>

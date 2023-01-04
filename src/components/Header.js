@@ -13,7 +13,7 @@ const Header = () => {
             <div className='h_cont'>
               <h1>広島、東広島、安芸区、安芸郡の不用品回収・引越しゴミ・家財整理・ゴミ屋敷・遺品整理・ゴミ屋敷・空家整理</h1>
               <div className="h_logo">                
-              <Link href="/"><img src="../../images/logo.png" alt="安芸リサイクル" /></Link>
+                <Link href="/"><StaticImage src="../images/logo.png" alt="安芸リサイクル" /></Link>
               </div>
               <div className='h_tool'>
               <div className='h_tel'>

@@ -32,8 +32,8 @@ export default function fuyouhinKaisyu() {
         />
 
         <h3 className="main_title">サービス一覧</h3>
-        <h4 className="service_title">不用品回収・家財整理<img src="../../images/service/service_icon01.png" className="icon_img" alt="" /></h4>
-        <div><img src="../../images/service/fuyouhin01.jpg" width={765} height={381} alt="" /></div>
+        <h4 className="service_title">不用品回収・家財整理<StaticImage src="../../images/service/service_icon01.png" className="icon_img" alt="" /></h4>
+        <div><StaticImage src="../../images/service/fuyouhin01.jpg" width={765} height={381} alt="" /></div>
         <p>小さい物一つでもお伺いします。<br />
           また仏壇や冷蔵庫、大型テレビ、ソファ、タンス、ベッド、食器棚などの重くて大きなものでも大丈夫。お気軽にご連絡ください。<br />
           ご依頼場所の規模や対象となる物の数などに制限はありません。<br />

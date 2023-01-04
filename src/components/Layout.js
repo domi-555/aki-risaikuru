@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
                                 { children }
                                 <h4 className="title01">お電話でのお問い合わせ・無料見積・メールでのお問い合わせ</h4>
                                 <p>当店に直接持ち込みできない方のために、出張買取＆引取もできます。出張の場合、買取金額が持ち込みの場合の半額程度になることをご了承ください。また、現地にて作業が発生する場合は作業料が発生します。出張料（実費）もいただきます。これらの費用は、お見積もりいたしますので、事前にお問い合わせください。</p>
-                                <div><a href="tel:0120-28-3374"><img src="../../images/free_dial_bt_s.png" width={765} height={200} alt="タップして電話かけてね！！tel:0120-28-3374" /></a></div>
+                                <div><a href="tel:0120-28-3374"><StaticImage src="../images/free_dial_bt_s.png" width={765} height={200} alt="タップして電話かけてね！！tel:0120-28-3374" /></a></div>
                             </div>
 
                             <MainR />

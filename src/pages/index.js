@@ -34,21 +34,21 @@ export default function Home() {
 
       <section>
         <div className='main-content'>
-            <div className="center pc"><img src="../images/txt05.png" alt="お得な定額パックプランをご用意!!" /></div>
-            <div className="center pc"><img src="../images/txt06.png" alt="他社より1円でも高ければご相談ください!!" /></div>
+            <div className="center pc"><StaticImage src="../images/txt05.png" alt="お得な定額パックプランをご用意!!" /></div>
+            <div className="center pc"><StaticImage src="../images/txt06.png" alt="他社より1円でも高ければご相談ください!!" /></div>
 
             <TelList />
 
-            <div className="bn_list"><img src="../images/txt07.png" alt="格安回収　明朗会計　全て込み　お得なパック料金はこちら" /></div>
+            <div className="bn_list"><StaticImage src="../images/txt07.png" alt="格安回収　明朗会計　全て込み　お得なパック料金はこちら" /></div>
             <div className="pack_title">下記の項目が全てパック料金に含まれます！</div>
 
             <ul className="pack_list">
-              <li><img src="../images/pack_price_list01.png" alt="搬出作業費" /></li>
-              <li><img src="../images/pack_price_list02.png" alt="階段料金" /></li>
-              <li><img src="../images/pack_price_list03.png" alt="スタッフ追加料金" /></li>
-              <li><img src="../images/pack_price_list04.png" alt="車両費" /></li>
-              <li><img src="../images/pack_price_list05.png" alt="出張費" /></li>
-              <li><img src="../images/pack_price_list06.png" alt="エアコン取り外し" /></li>
+              <li><StaticImage src="../images/pack_price_list01.png" alt="搬出作業費" /></li>
+              <li><StaticImage src="../images/pack_price_list02.png" alt="階段料金" /></li>
+              <li><StaticImage src="../images/pack_price_list03.png" alt="スタッフ追加料金" /></li>
+              <li><StaticImage src="../images/pack_price_list04.png" alt="車両費" /></li>
+              <li><StaticImage src="../images/pack_price_list05.png" alt="出張費" /></li>
+              <li><StaticImage src="../images/pack_price_list06.png" alt="エアコン取り外し" /></li>
             </ul>
 
             <p>安芸リサイクルでは、他社では別料金になる搬出作業費・お掃除作業費・スタッフ追加料金・車両費・出張費・エアコン取り外し費用が全て込みの料金となっております。<span class="dark-red b_900">お見積り後の追加料金も一切ございません。</span><br />
@@ -59,20 +59,20 @@ export default function Home() {
             <div className="kaisyu_box">
               <h3>【回収品一覧】</h3>
               <p>冷蔵庫、洗濯機、テレビ、エアコン、窓用エアコン、パソコン、ノートパソコン、ドラム式洗濯乾燥機、食器棚、ソファー、洋服タンス、整理タンス、シングルベッド、マットレス、学習机、ダイニングテーブル、ガラステーブル、ＴＶ台、布団、毛布、電子レンジ、トースター、電気ポット、炊飯器、掃除機、医療乾燥機、ふとん乾燥機、アイロン、草刈機、ホットカーペット、コタツ、ストーブ、オイルヒーター、ファンヒーター、電気ストーブ、扇風機、空気清浄機、除湿機、加湿器、換気扇、冷風機、キーボード、ウォーターベッド、座椅子、ジュータンその他</p>
-              <div className="pc center"><img src="../images/itiran_img.png" alt="回収品一覧イメージ" /></div>
-              <div className="smp center"><img src="../images/itiran_img_smp.png" alt="回収品一覧イメージ" /></div>
+              <div className="pc center"><StaticImage src="../images/itiran_img.png" alt="回収品一覧イメージ" /></div>
+              <div className="smp center"><StaticImage src="../images/itiran_img_smp.png" alt="回収品一覧イメージ" /></div>
             </div>
 
             <TelList />
 
             <BnList />
 
-            <div className="bn_list"><img src="../images/txt09.png" alt="安芸リサイクルからお客様への3つのお約束！" /></div>
+            <div className="bn_list"><StaticImage src="../images/txt09.png" alt="安芸リサイクルからお客様への3つのお約束！" /></div>
 
             <div className="promise_box">
-              <div className='promise_img'><img src="../images/txt10_1.png" alt="即日！スピード対応！" /></div>
-              <div className='promise_img'><img src="../images/txt10_2.png" alt="損害保険に対応！" /></div>
-              <div className='promise_img'><img src="../images/txt10_3.png" alt="後から請求はありません！" /></div>
+              <div className='promise_img'><StaticImage src="../images/txt10_1.png" alt="即日！スピード対応！" /></div>
+              <div className='promise_img'><StaticImage src="../images/txt10_2.png" alt="損害保険に対応！" /></div>
+              <div className='promise_img'><StaticImage src="../images/txt10_3.png" alt="後から請求はありません！" /></div>
             </div>
 
             <ServiceList />
@@ -85,7 +85,7 @@ export default function Home() {
               広島で一番安いリサイクルショップ、是非一度お問い合わせください。
             </div>
 
-            <div className="bn_list"><Link to="service/house-cleaning/"><img src="../images/house-cleaning-bn.png" alt="ハウスクリーニング リフォーム担当者直通" /></Link></div>
+            <div className="bn_list"><Link to="service/house-cleaning/"><StaticImage src="../images/house-cleaning-bn.png" alt="ハウスクリーニング リフォーム担当者直通" /></Link></div>
 
             <BnList />
           </div>
@@ -101,10 +101,10 @@ export default function Home() {
 
                 <div className="flex-center top_kaisyu_flow">
                   <div>
-                    <img src="../images/top_flow01_1.png" alt="受付→予約→お見積もり" />
+                    <StaticImage src="../images/top_flow01_1.png" alt="受付→予約→お見積もり" />
                   </div>
                   <div>
-                    <img src="../images/top_flow01_2.png" alt="回収作業→お支払い" />
+                    <StaticImage src="../images/top_flow01_2.png" alt="回収作業→お支払い" />
                   </div>
                 </div>
 
@@ -117,18 +117,18 @@ export default function Home() {
                   <div className="top_flow_box">
                     <h4 className="before_title">Before</h4>
                     <div className="top_flow_inner">                    
-                    <div className="center"><img src="../images/jirei_before01.jpg" alt="Before画像" /></div>
+                    <div className="center"><StaticImage src="../images/jirei_before01.jpg" alt="Before画像" /></div>
                     <p className="orange b_900 txt140p">● 回収品</p>
                     <p>・洗濯機・冷蔵庫・机・いす・デスクトップパソコン・ちゃぶ台方机・その他細々したもの</p>
                     </div>
                   </div>
 
-                  <div className="top_flow_arrow"><img src="../images/arrow_03.png" alt="" /></div>
+                  <div className="top_flow_arrow"><StaticImage src="../images/arrow_03.png" alt="" /></div>
 
                   <div className="top_flow_box">
                     <h4 className="after_title">After</h4>
                     <div className="top_flow_inner">
-                      <div className="center"><img src="../images/jirei_after01.jpg" alt="After画像" /></div>
+                      <div className="center"><StaticImage src="../images/jirei_after01.jpg" alt="After画像" /></div>
                       <p className="orange b_900 txt140p">● 回収料金</p>
                       <p className="price">33,000<span className="yen">円(税込)</span></p>
                     </div>
@@ -136,7 +136,7 @@ export default function Home() {
 
                 </div>
               
-                <div><a href="tel:0120-28-3374"><img src="../images/free_dial_bt_s.png" alt="タップして電話かけてね！！tel:0120-28-3374" /></a></div>
+                <div><a href="tel:0120-28-3374"><StaticImage src="../images/free_dial_bt_s.png" alt="タップして電話かけてね！！tel:0120-28-3374" /></a></div>
 
                 <h3 className="title01 mt60">対応エリア一覧</h3>
 
@@ -145,7 +145,7 @@ export default function Home() {
                 <TopVoice />
 
                 <p className="center"><a href="/voice/" className="bt01">詳しくはこちら<FontAwesomeIcon icon={faCircleChevronRight} /></a></p>
-                <div><a href="tel:0120-28-3374"><img src="../images/free_dial_bt_s.png" alt="タップして電話かけてね！！tel:0120-28-3374" /></a></div>
+                <div><a href="tel:0120-28-3374"><StaticImage src="../images/free_dial_bt_s.png" alt="タップして電話かけてね！！tel:0120-28-3374" /></a></div>
 
               </div>
 

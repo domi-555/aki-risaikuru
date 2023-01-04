@@ -9,7 +9,7 @@ const Footer = () => {
         <div id="footer">
           <div id="footer-inner">
             <p>不用品回収、粗大ゴミの回収、遺品整理やリサイクル品の引取、回収、買取のことは安芸リサイクルまで</p>
-            <div><Link to="/"><img src="../../images/logo.png" alt="安芸リサイクル" width={265} height={48} /></Link></div>
+            <div><Link to="/"><StaticImage src="../images/logo.png" alt="安芸リサイクル" width={265} height={48} /></Link></div>
             <div id="foot_area">
               <p className="bold big">対応エリア</p>
               <p>広島市中区・東区・南区・安佐南区・安佐北区・西区・佐伯区・廿日市市・安芸区・海田・坂・熊野・東広島市・西条・八本松・黒瀬町・安芸津町・安浦町・呉市・江田島市・音戸町・倉橋町</p>
